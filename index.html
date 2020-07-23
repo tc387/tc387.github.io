@@ -19,23 +19,44 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
   </head>
   <body>
+    <div id="page-container">
       <div id="welcome-img">
         <img src="images/lake-michigan_1.jpg" alt="lake Michigan">
       </div>
       <!--Navigation bar-->
-      <div class="container">
+      <!-- <div class="row " >
+        <div class="col container">
            <a href="index.html"> <i class="fab fa-fort-awesome"></i> Home</a>
+        </div>
+        <div class="col container ">
            <a href="research.html"><i class="far fa-lightbulb"></i> Research</a>
+         </div>
+         <div class="col container">
           <a href="publications.html"><i class="fas fa-share-alt"></i> Publications</a>
+        </div>
+        <div class="col container">
            <a href="talks.html"><i class="fas fa-microphone-alt"></i> Talks</a>
-      </div>
-      <!--end of Navigation bar-->
-      <div class="row">
-        <!-- <div class="w-100 fields">
-          <p>
-          Colloidal systems
-        </p>
+        </div>
       </div> -->
+      <!--end of Navigation bar-->
+
+  <nav class="navbar navbar-expand-sm bg-light justify-content-center" >
+  <ul class="navbar-nav">
+    <li class="nav-item container">
+      <a class="nav-link" href="index.html"> <i class="fab fa-fort-awesome"></i> Home</a>
+    </li>
+    <li class="nav-item container">
+      <a class="nav-link" href="research.html"><i class="far fa-lightbulb"></i> Research</a>
+    </li>
+    <li class="nav-item container">
+      <a class="nav-link" href="publications.html"><i class="fas fa-share-alt"></i> Publications</a>
+    </li>
+    <li class="nav-item container">
+       <a class="nav-link" href="talks.html"><i class="fas fa-microphone-alt"></i> Talks</a>
+    </li>
+  </ul>
+</nav>
+      <div class="row">
       <div class="col">
         <div class="figure intro">
           <img  class="d-block w-100" src= "images/me_boulder.jpg" alt="Tine Curk"/>
@@ -71,47 +92,47 @@
 
     </div>
   </div>
-        <!-- <div id="intro" class="text">
 
-      </div> -->
-    <div class="wrapper">
-      <div id="movie">
-        <video playsinline controls autoplay muted loop>
-          <source src="videos/mov_bbb.mp4" type="video/mp4">
-             Your browser does not support the video tag.
-        </video>
+    <div class="row">
+      <div class="col">
+        <div id="movie"  class="d-block" >
+          <video playsinline controls autoplay muted loop >
+            <source src="videos/movie_ec-rec_t60_ns1000_lm12.mp4" type="video/mp4">
+               Your browser does not support the video tag.
+          </video>
+        </div>
+    </div>
+    <div class = "col">
+      <div class="gallery d-block">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="images/Overview-of-bonded-and-pair-interactions-in-oxDNA-phosphate-backbone-connectivity-and.png" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/F1.large.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/FIG_TOC_sandwich.jpg" alt="Third slide">
+          </div>
+        </div>
+        <!-- Carousel nav -->
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-    <div class="gallery">
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="images/Overview-of-bonded-and-pair-interactions-in-oxDNA-phosphate-backbone-connectivity-and.png" alt="First slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="images/F1.large.jpg" alt="Second slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="images/FIG_TOC_sandwich.jpg" alt="Third slide">
-        </div>
-      </div>
-      <!-- Carousel nav -->
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
     </div>
   </div>
-</div>
-
 </div>
 <div class = "footer">
   <ul>
@@ -126,6 +147,6 @@
     </li>
   </ul>
 </div>
-
+</div>
   </body>
 </html>

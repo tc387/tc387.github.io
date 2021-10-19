@@ -115,7 +115,6 @@ img {vertical-align: middle;}
   width: 100%;
   text-align: center;
   background-color: rgba(20, 40, 50, 0.15);
-  text-align: center;
   padding: 10px 0;
   position: relative;
   bottom: 0px;
@@ -139,6 +138,7 @@ img {vertical-align: middle;}
 	color: rgba(0,0,0,0.7);
 	font-size: 15px;
 }
+
 .col{
   /* max-width: 100%; */
   padding: 0;
@@ -146,11 +146,13 @@ img {vertical-align: middle;}
   /* text-align: center; */
 
 }
+
 .explain, .figure{
   width: 500px;
   height: 450px;
   max-height: 700px;
   max-width: 100%;
+  padding: 20px 20px 20px 20px;
   /* text-align: center; */
   /* overflow: auto; */
 
@@ -165,7 +167,7 @@ img {vertical-align: middle;}
   font-size: 20px;
   color: dodgerblue;
   height: 80px;
-  padding: 10px 10px 10px 10px;
+  padding: 20px 20px 20px 20px;
   margin: 0 auto;
   text-align: left;
 /*  background: white ; rgba(20, 40, 50, 0.15);*/
@@ -178,7 +180,7 @@ img {vertical-align: middle;}
   padding: 40px 20px 10px 20px;
   float: center;
   height: 250px;
-  max-height: 250px;
+/*  max-height: 250px;*/
 }
 
 @media screen and (max-width: 500px){

@@ -1,0 +1,921 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Theme Made By www.w3schools.com - No Copyright -->
+        <title>Limmer Research Group</title>
+        <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+                        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+                            <style>
+                                body {
+                                    font: 400 15px Lato, sans-serif;
+                                    line-height: 1.8;
+                                    color: #818181;
+                                }
+                            h2 {
+                                font-size: 24px;
+                                text-transform: uppercase;
+                                color: #303030;
+                                font-weight: 600;
+                                margin-bottom: 30px;
+                            }
+                            h4 {
+                                font-size: 19px;
+                                line-height: 1.375em;
+                                color: #303030;
+                                font-weight: 400;
+                                margin-bottom: 30px;
+                            }
+                            h5 {
+                                font-size: 22px;
+                                line-height: 1em;
+                                color: #303030;
+                                font-weight: 400;
+                                margin-bottom: 10px;
+                            }
+
+                            .jumbotron {
+                                margin-bottom: 0px;
+                                background-image: url(polaron-blue.jpg);
+                                background-position: 0% 80%;
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                color: white;
+                                text-shadow: black 0.3em 0.3em 0.3em;
+                                background-color: #1e9ef4;
+                                color: #fff;
+                                padding: 150px 25px;
+                                font-family: Montserrat, sans-serif;
+                            }
+                            .container-fluid {
+                                padding: 60px 10%;
+                            }
+                            .container-pub {
+                                padding: 60px 10%;
+                            }
+                            .container-member {
+                                padding: 60px 10%;
+                            }
+                            .container-twit {
+                                padding: 20px 10%;
+                            }
+                            .container-media {
+                                padding: 20px 10%;
+                            }
+                            .bg-grey {
+                                padding: 60px 10%;
+                                background-color: #f6f6f6;
+                            }
+                            .logo-small {
+                                color: #1e9ef4;
+                                font-size: 20px;
+                            }
+                            .logo-medium {
+                                color: #1e9ef4;
+                                font-size: 50px;
+                            }
+
+                            .logo {
+                                color: #f4511e;
+                                font-size: 200px;
+                            }
+                            .img-rounded {
+                                border-radius: 6px;
+                            }
+                            .img-thumbnail {
+
+                                padding: 4px;
+                                line-height: 1.428571429;
+                                background-color: #ffffff;
+                                border: 0;
+                                border-radius: 4px;
+                                -webkit-transition: all 0.2s ease-in-out;
+                                transition: all 0.2s ease-in-out;
+                            }
+                            .lead2 {
+                                margin-bottom: 20px;
+                                font-size: 18.099999999999998px;
+                                font-weight: 200;
+                                line-height: 1.4;
+                            }
+                            .lead3 {
+                                margin-bottom: 20px;
+                                font-size: 18.099999999999998px;
+                                font-weight: 200;
+                                line-height: 1.4;
+                            }
+                            .lead4 {
+                                margin-bottom: 10px;
+                                font-size: 18.099999999999998px;
+                                font-weight: 500;
+                                line-height: 1.4;
+                            }
+
+                            .thumbnail {
+                                display: block;
+                            }
+                            .img-thumbnail {
+                                display: inline-block;
+                                height: auto;
+                                max-width: 100%;
+                            }
+
+                            .carousel-control.right, .carousel-control.left {
+                                background-image: none;
+                                color: #f4511e;
+                            }
+                            .carousel-indicators li {
+                                border-color: #1e9ef4;
+                            }
+                            .carousel-indicators li.active {
+                                background-color: #1e9ef4;
+                            }
+                            .item h4 {
+                                font-size: 19px;
+                                line-height: 1.375em;
+                                font-weight: 400;
+                                font-style: italic;
+                                margin: 70px 0;
+                            }
+                            .item span {
+                                font-style: normal;
+                            }
+                            .panel {
+                                border: 1px solid #1e9ef4;
+                                border-radius:0 !important;
+                                transition: box-shadow 0.5s;
+                            }
+                            .panel:hover {
+                                box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+                            }
+                            .panel-footer .btn:hover {
+                                border: 1px solid #1e9ef4;
+                                background-color: #fff !important;
+                                color: #f4511e;
+                            }
+                            .panel-heading {
+                                color: #fff !important;
+                                background-color: #1e9ef4 !important;
+                                padding: 25px;
+                                border-bottom: 1px solid transparent;
+                                border-top-left-radius: 0px;
+                                border-top-right-radius: 0px;
+                                border-bottom-left-radius: 0px;
+                                border-bottom-right-radius: 0px;
+                            }
+                            .img2 {
+                                filter: gray; /* IE6-9 */
+                                -webkit-filter: grayscale(0.2); /* Google Chrome, Safari 6+ & Opera 15+ */
+                                -webkit-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+                                -moz-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+                                box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+                                margin-bottom:20px;
+                                max-width: 80%;
+
+                            }
+
+                            .img2:hover {
+                                filter: none; /* IE6-9 */
+                                -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
+
+                            }
+                            .panel-footer {
+                                background-color: white !important;
+                            }
+                            .panel-footer h3 {
+                                font-size: 32px;
+                            }
+                            .panel-footer h4 {
+                                color: #aaa;
+                                font-size: 14px;
+                            }
+                            .panel-footer .btn {
+                                margin: 15px 0;
+                                background-color: #f4511e;
+                                color: #fff;
+                            }
+                            .navbar {
+                                margin-bottom: 0;
+                                background-color: #617184;
+                                z-index: 9999;
+                                border: 0;
+                                font-size: 12px !important;
+                                line-height: 1.42857143 !important;
+                                letter-spacing: 4px;
+                                border-radius: 0;
+                                font-family: Montserrat, sans-serif;
+                            }
+                            .navbar li a, .navbar .navbar-brand {
+                                color: #fff !important;
+                            }
+                            .navbar-nav li a:hover, .navbar-nav li.active a {
+                                color: #f4511e !important;
+                                background-color: #fff !important;
+                            }
+                            .navbar-default .navbar-toggle {
+                                border-color: transparent;
+                                color: #fff !important;
+                            }
+                            footer .glyphicon {
+                                font-size: 20px;
+                                margin-bottom: 20px;
+                                color: #f4511e;
+                            }
+                            iframe {
+                                width: 100%;
+                                height: 20vw; /* 100/56.25 = 560/315 = 1.778 */
+                            }
+
+                            .slideanim {visibility:hidden;}
+                            .slide {
+                                animation-name: slide;
+                                -webkit-animation-name: slide;
+                                animation-duration: 1s;
+                                -webkit-animation-duration: 1s;
+                                visibility: visible;
+                            }
+                            @keyframes slide {
+                                0% {
+                                    opacity: 0;
+                                    transform: translateY(70%);
+                                }
+                                100% {
+                                    opacity: 1;
+                                    transform: translateY(0%);
+                                }
+                            }
+                            @-webkit-keyframes slide {
+                                0% {
+                                    opacity: 0;
+                                    -webkit-transform: translateY(70%);
+                                }
+                                100% {
+                                    opacity: 1;
+                                    -webkit-transform: translateY(0%);
+                                }
+                            }
+                            @media screen and (max-width: 768px) {
+                                .col-sm-4 {
+                                    text-align: center;
+                                    margin: 25px 0;
+                                }
+                                .btn-lg {
+                                    width: 100%;
+                                    margin-bottom: 35px;
+                                }
+                            }
+                            @media screen and (max-width: 480px) {
+                                .logo {
+                                    font-size: 150px;
+                                }
+                            }
+                            </style>
+
+                            <!-- Global site tag (gtag.js) - Google Analytics -->
+                            <script async src="https://www.googletagmanager.com/gtag/js?id=G-F8E6H3WE0B"></script>
+                            <script>
+                                window.dataLayer = window.dataLayer || [];
+                                function gtag(){dataLayer.push(arguments);}
+                                gtag('js', new Date());
+
+                                gtag('config', 'G-F8E6H3WE0B');
+                                </script>
+                            </head>
+    <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#myPage">HOME</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#news">NEWS</a></li>
+                        <li><a href="#members">MEMBERS</a></li>
+                        <li><a href="#research">RESEARCH</a></li>
+                        <li><a href="resources.html">RESOURCES</a></li>
+                        <li><a href="pubs.html">PUBLICATIONS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="jumbotron text-center">
+            <h1>Limmer Group</h1>
+            <p>University of California, Berkeley</p>
+            <!--
+             <form>
+             <div class="input-group">
+             <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+             <div class="input-group-btn">
+             <button type="button" class="btn btn-danger">Subscribe</button>
+             </div>
+             </div>
+             </form>
+             -->
+        </div>
+
+        <!-- Container (About Section) -->
+        <div id="news" class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Recent News</h2>
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">So pleased to welcome the two newest <a href="https://twitter.com/limmerlab?ref_src=twsrc%5Etfw">@limmerlab</a> members: postdoc Jorge Rosa fresh from a PhD <a href="https://twitter.com/MillerCaltech?ref_src=twsrc%5Etfw">@MillerCaltech</a> and graduate student Leonardo Coello from <a href="https://twitter.com/UNAMmx?ref_src=twsrc%5Etfw">@UNAMmx</a>! <a href="https://t.co/PTyHIeeEbc">pic.twitter.com/PTyHIeeEbc</a></p>&mdash; limmerlab<a href="https://twitter.com/limmerlab/status/1528761042565681152?ref_src=twsrc%5Etfw"> May 23, 2022</a></blockquote>
+
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">So happy to celebrate Avishek Das <a href="https://twitter.com/pleplostelous?ref_src=twsrc%5Etfw">@pleplostelous</a>, the newest PhD from <a href="https://twitter.com/limmerlab?ref_src=twsrc%5Etfw">@limmerlab</a> ! Apart from making huge advances in the way we study driven systems computationally with his thesis <a href="https://t.co/l154D41sZX">https://t.co/l154D41sZX</a> <a href="https://twitter.com/hashtag/VPS?src=hash&amp;ref_src=twsrc%5Etfw">#VPS</a>, he is a tremendous educator and scholar. <a href="https://twitter.com/UCB_Chemistry?ref_src=twsrc%5Etfw">@UCB_Chemistry</a>  <a href="https://twitter.com/_amolf?ref_src=twsrc%5Etfw">@_amolf</a> <a href="https://t.co/3QJowFKylo">pic.twitter.com/3QJowFKylo</a></p>&mdash; limmerlab  <a href="https://twitter.com/limmerlab/status/1526916831910322177?ref_src=twsrc%5Etfw">May 18, 2022</a></blockquote>
+
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Pleased to see this collaboration with the inimitable <a href="https://twitter.com/HaimeiZheng?ref_src=twsrc%5Etfw">@HaimeiZheng</a> out in <a href="https://twitter.com/NatureComms?ref_src=twsrc%5Etfw">@NatureComms</a> in which a novel coarsening mechanism is uncovered for core-shell structures in solution <a href="https://twitter.com/UCB_Chemistry?ref_src=twsrc%5Etfw">@UCB_Chemistry</a> <a href="https://twitter.com/KavliENSI?ref_src=twsrc%5Etfw">@KavliENSI</a> <a href="https://t.co/BewNQMmqfn">https://t.co/BewNQMmqfn</a> <a href="https://t.co/4DMQ5YwQPt">pic.twitter.com/4DMQ5YwQPt</a></p>&mdash; limmerlab <a href="https://twitter.com/limmerlab/status/1521229330654765057?ref_src=twsrc%5Etfw">May 2, 2022</a></blockquote>
+
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Congratulations to Joseph Slivka for his <a href="https://twitter.com/NSF?ref_src=twsrc%5Etfw">@NSF</a> <a href="https://twitter.com/hashtag/GRFP?src=hash&amp;ref_src=twsrc%5Etfw">#GRFP</a>! Enabling exciting studies with <a href="https://twitter.com/Yildiz_Lab?ref_src=twsrc%5Etfw">@Yildiz_Lab</a> on molecular motors and molecular dynamics far from equilibrium.</p>&mdash; limmerlab  <a href="https://twitter.com/limmerlab/status/1511133068597161986?ref_src=twsrc%5Etfw">April 5, 2022</a></blockquote>
+
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Avishek’s <a href="https://twitter.com/pleplostelous?ref_src=twsrc%5Etfw">@pleplostelous</a> latest out in Science today! With the Ginsberg, Talapin and de la Cruz groups: Self-assembly of nanocrystals into strongly electronically coupled all-inorganic supercrystals <a href="https://t.co/Jrz1mUVJQ8">https://t.co/Jrz1mUVJQ8</a> <a href="https://twitter.com/UCB_Chemistry?ref_src=twsrc%5Etfw">@UCB_Chemistry</a> <a href="https://twitter.com/KavliENSI?ref_src=twsrc%5Etfw">@KavliENSI</a></p>&mdash; limmerlab  <a href="https://twitter.com/limmerlab/status/1507381718051074050?ref_src=twsrc%5Etfw">March 25, 2022</a></blockquote>
+
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">This feels like that start of something big: Avishek <a href="https://twitter.com/pleplostelous?ref_src=twsrc%5Etfw">@pleplostelous</a> and Ben’s <a href="https://twitter.com/benkuznetsspeck?ref_src=twsrc%5Etfw">@benkuznetsspeck</a> Variational Path Sampling (VPS) paper is out in PRL today. It’s a conceptually new way to study rare events and applicable to systems far from equilibrium. <a href="https://t.co/WuTCvurqCJ">https://t.co/WuTCvurqCJ</a></p>&mdash; limmerlab <a href="https://twitter.com/limmerlab/status/1482021673649860612?ref_src=twsrc%5Etfw">January 14, 2022</a></blockquote>
+
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Happy to see Aditya’s first group paper in print today. In it we study how the kinetics of peptide isomerization is altered at an air-water interface— with TPS+U we find it’s suppressed relative to the bulk. <a href="https://t.co/MhWGa21eD8">https://t.co/MhWGa21eD8</a></p>&mdash; limmerlab <a href="https://twitter.com/limmerlab/status/1480925903660146698?ref_src=twsrc%5Etfw">January 11, 2022</a></blockquote>
+
+                    <!--
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Yoon&#39;s tremendous study on excitons in the lead halides has just posted: <a href="https://t.co/H6wQFjrpVx">https://t.co/H6wQFjrpVx</a> In it she&#39;s discovered that electrons and holes actually repel each other when embedded in the soft, polar MAPbI3 lattice. <a href="https://twitter.com/UCB_Chemistry?ref_src=twsrc%5Etfw">@UCB_Chemistry</a> <a href="https://twitter.com/KavliENSI?ref_src=twsrc%5Etfw">@KavliENSI</a> <a href="https://t.co/EftDdshNwQ">pic.twitter.com/EftDdshNwQ</a></p>&mdash; limmerlab  <a href="https://twitter.com/limmerlab/status/1471653704646336513?ref_src=twsrc%5Etfw">December 17, 2021</a></blockquote>
+
+
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Pleased to see Trevor&#39;s <a href="https://twitter.com/myphysicsvoyage?ref_src=twsrc%5Etfw">@myphysicsvoyage</a> collaboration with Summer in the Groves group <a href="https://twitter.com/UCB_Chemistry?ref_src=twsrc%5Etfw">@UCB_Chemistry</a> up on the bioRxiv today! In which we show how limited valency disrupts the LAT membrane bound protein condensation transition <a href="https://t.co/CAYuSCSBeD">https://t.co/CAYuSCSBeD</a> <a href="https://t.co/d47kUk3k8Z">pic.twitter.com/d47kUk3k8Z</a></p>&mdash; limmerlab <a href="https://twitter.com/limmerlab/status/1467969696637009929?ref_src=twsrc%5Etfw">December 6, 2021</a></blockquote>
+
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">A hearty congratulations to Aditya for passing his second year qualifying exam! <a href="https://twitter.com/hashtag/Qualified?src=hash&amp;ref_src=twsrc%5Etfw">#Qualified</a> <a href="https://twitter.com/UCB_Chemistry?ref_src=twsrc%5Etfw">@UCB_Chemistry</a> <a href="https://t.co/5z6SvPyTH3">pic.twitter.com/5z6SvPyTH3</a></p>&mdash; limmerlab <a href="https://twitter.com/limmerlab/status/1458215611268354053?ref_src=twsrc%5Etfw">November 9, 2021</a></blockquote>
+
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Really happy to welcome two new <a href="https://twitter.com/limmerlab?ref_src=twsrc%5Etfw">@Limmerlab</a> members, chemistry graduate students SeokJin Moon and Sam Oaks-Leaf! <a href="https://twitter.com/UCB_Chemistry?ref_src=twsrc%5Etfw">@UCB_Chemistry</a> <a href="https://t.co/3v2ApHJQBS">pic.twitter.com/3v2ApHJQBS</a></p>&mdash; limmerlab  <a href="https://twitter.com/limmerlab/status/1450973731543605249?ref_src=twsrc%5Etfw">October 20, 2021</a></blockquote>
+
+
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">If you are interested in some of the things the group has been up to since starting up at <a href="https://twitter.com/UCB_Chemistry?ref_src=twsrc%5Etfw">@UCB_Chemistry</a> five years ago, check out this seminar David gave to the department which provides a bit of an overview <a href="https://t.co/F4TrRKkQjT">https://t.co/F4TrRKkQjT</a></p>&mdash; limmerlab <a href="https://twitter.com/limmerlab/status/1445417121828130816?ref_src=twsrc%5Etfw">October 5, 2021</a></blockquote> </script>
+
+
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Avishek&#39;s latest with Dom and Juanpe is now in print at JCP in which we learn unique driving forces to effect rare transitions in noneq systems. The RL techniques employed enabled this variational path sampling. <a href="https://twitter.com/pleplostelous?ref_src=twsrc%5Etfw">@pleplostelous</a> <a href="https://twitter.com/UCB_Chemistry?ref_src=twsrc%5Etfw">@UCB_Chemistry</a> <a href="https://twitter.com/KavliENSI?ref_src=twsrc%5Etfw">@KavliENSI</a> <a href="https://t.co/rGnXpxHydE">https://t.co/rGnXpxHydE</a></p>&mdash; limmerlab <a href="https://twitter.com/limmerlab/status/1443965595892936709?ref_src=twsrc%5Etfw">October 1, 2021</a></blockquote></script>
+
+
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Pleased to see Anthony&#39;s latest out <a href="https://twitter.com/JPhysChem?ref_src=twsrc%5Etfw">@JPhysChem</a> in which he resolves a long standing conundrum concerning the similar wet-ability of water on carbon and boron-nitride but dissimilar interfacial frictions. The culprit, H-N hydrogen bonds <a href="https://t.co/AEyqji8soO">https://t.co/AEyqji8soO</a> <a href="https://t.co/XpvCl4pes6">pic.twitter.com/XpvCl4pes6</a></p>&mdash; limmerlab <a href="https://twitter.com/limmerlab/status/1437499522125484034?ref_src=twsrc%5Etfw">September 13, 2021</a></blockquote></script>
+
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Check out this note reevaluating the role of vibronic energy transfer in light-harvesting complex II using 2DEV spectroscopy, done by <a href="https://twitter.com/AddScience?ref_src=twsrc%5Etfw">@AddScience</a> with <a href="https://twitter.com/EAArsenault?ref_src=twsrc%5Etfw">@EAArsenault</a> and the Fleming group <a href="https://twitter.com/UCB_Chemistry?ref_src=twsrc%5Etfw">@UCB_Chemistry</a> <a href="https://t.co/smbfKf0VbJ">https://t.co/smbfKf0VbJ</a></p>&mdash; limmerlab <a href="https://twitter.com/limmerlab/status/1433084006191415300?ref_src=twsrc%5Etfw">September 1, 2021</a></blockquote></script>
+
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Pleased to see Chloe&#39;s last paper out in print today <a href="https://twitter.com/PhysRevResearch?ref_src=twsrc%5Etfw">@PhysRevResearch</a> in which she lays out some principles for designing low energy logical circuits applying principles of stochastic thermodynamics <a href="https://t.co/cdlwn4DG8P">https://t.co/cdlwn4DG8P</a> <a href="https://twitter.com/UCB_Chemistry?ref_src=twsrc%5Etfw">@UCB_Chemistry</a></p>&mdash; limmerlab <a href="https://twitter.com/limmerlab/status/1428738955776716809?ref_src=twsrc%5Etfw">August 20, 2021</a></blockquote> </script>
+
+
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Very proud of this one: Check out Trevor&#39;s <a href="https://twitter.com/myphysicsvoyage?ref_src=twsrc%5Etfw">@myphysicsvoyage</a> newest with Katie and Kranthi, where we bound the entropy production fluctuations for active matter systems + detail a dynamical phase transition that occurs to reduce dissipation. <a href="https://t.co/UGCBjPnKo4">https://t.co/UGCBjPnKo4</a></p>&mdash; limmerlab,  <a href="https://twitter.com/limmerlab/status/1286460324317523969?ref_src=twsrc%5Etfw">July 24, 2020</a></blockquote>
+
+
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Happy to see Amael&#39;s latest in collaboration with the <a href="https://twitter.com/yanggroupucb?ref_src=twsrc%5Etfw">@yanggroupucb</a> post, in which we observe and attempt to explain solid state ionic rectification in a lead halide perovskite heterojunction. <a href="https://twitter.com/UCB_Chemistry?ref_src=twsrc%5Etfw">@UCB_Chemistry</a> <a href="https://t.co/UvElPNhBJc">https://t.co/UvElPNhBJc</a></p>&mdash; limmerlab, <a href="https://twitter.com/limmerlab/status/1283418998034493440?ref_src=twsrc%5Etfw">July 15, 2020</a></blockquote>
+
+
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Excited to see our Perspective with the Ginsberg group out in JCP today on the role of polarons in photoinduced phase separation in the lead-halides <a href="https://t.co/5Q3D8hX19Z">https://t.co/5Q3D8hX19Z</a></p>&mdash; limmerlab, <a href="https://twitter.com/limmerlab/status/1272569517672030208?ref_src=twsrc%5Etfw">June 15, 2020</a></blockquote>
+
+
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">So excited to Mirza&#39;s work on N2O5 reactive uptake post today! Check it out to learn how this small molecule undergoes hydrolysis at a liquid-vapor interface. It has all the things: neural networks, importance sampling, &amp; committors. <a href="https://t.co/iKzY0nbvAd">https://t.co/iKzY0nbvAd</a> <a href="https://twitter.com/CAICECCI?ref_src=twsrc%5Etfw">@CAICECCI</a> <a href="https://twitter.com/NSF?ref_src=twsrc%5Etfw">@NSF</a></p>&mdash; limmerlab, <a href="https://twitter.com/limmerlab/status/1263268199614697472?ref_src=twsrc%5Etfw">May 21, 2020</a></blockquote>
+
+
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Group member Chloe Gao has been named one of UC Berkeley&#39;s Outstanding Graduate Student Instructors, congratulations Chloe!! <a href="https://t.co/W9jadpvXGZ">https://t.co/W9jadpvXGZ</a> <a href="https://twitter.com/UCB_Chemistry?ref_src=twsrc%5Etfw">@UCB_Chemistry</a></p>&mdash; limmerlab,  <a href="https://twitter.com/limmerlab/status/1255532170602582027?ref_src=twsrc%5Etfw">April 29, 2020</a></blockquote>
+
+
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Very happy to see this paper with <a href="https://twitter.com/nicoleyh11?ref_src=twsrc%5Etfw">@nicoleyh11</a> come out as an Editor&#39;s suggestion in Phys. Rev. A! Reports the application of quantum resource theory bounds to photoisomerization yields: <a href="https://t.co/kQC18Fe4ih">https://t.co/kQC18Fe4ih</a></p>&mdash; limmerlab, <a href="https://twitter.com/limmerlab/status/1251205994752991232?ref_src=twsrc%5Etfw">April 17, 2020</a></blockquote>
+
+
+                     <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Very pleased to report that Chloe&#39;s paper on Nonlinear transport coefficients from large deviation functions was selected as a 2019 JCP Editor&#39;s choice. Check out all of the papers in the collection here: <a href="https://t.co/DJNNl8n92k">https://t.co/DJNNl8n92k</a> <a href="https://twitter.com/AIP_Publishing?ref_src=twsrc%5Etfw">@AIP_Publishing</a> <a href="https://twitter.com/hashtag/AIP_JCP?src=hash&amp;ref_src=twsrc%5Etfw">#AIP_JCP</a> <a href="https://twitter.com/hashtag/jcpedchoice?src=hash&amp;ref_src=twsrc%5Etfw">#jcpedchoice</a></p>&mdash; @limmerlab, February 13, 2020</blockquote>
+
+                     <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Limmer lab strikes again with Avishek&#39;s paper on enhanced sampling of nonequilibrium steady-states out in JCP: <a href="https://twitter.com/pleplostelous?ref_src=twsrc%5Etfw">@pleplostelous</a> <a href="https://t.co/PZ5uhUqnaB">https://t.co/PZ5uhUqnaB</a></p>&mdash; @limmerlab, December 30, 2019</blockquote>
+
+                     <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Happy to see our latest collaboration with Ushnish out in PRB Rapid today, on the violations of Fourier&#39;s law at the nanoscale:<br> <a href="https://t.co/Jybxyjxdl5">https://t.co/Jybxyjxdl5</a></p>&mdash; @limmerlab, December 30, 2019</blockquote>
+
+
+                     <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Fun collaboration with old friends on the statistical mechanics of constant voltage ensembles <a href="https://t.co/GwowjfrMWV">https://t.co/GwowjfrMWV</a></p>&mdash; @limmerlab, November 22, 2019</blockquote>
+
+
+                     <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Finally found a chance to celebrate Chloe&#39;s paper on the Onsager-Wien effect <a href="https://t.co/UPIujQQIvm">https://t.co/UPIujQQIvm</a> <a href="https://t.co/fArOmcQzqf">pic.twitter.com/fArOmcQzqf</a></p>&mdash; @limmerlab, November 19, 2019</blockquote>
+
+
+                     <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Check out the newest from Chloe in collaboration with Benjamin Rotenberg and Dominika Lesnicki: How to compute the conductivity of electrolyte solutions as a continuous function of applied field with a generalized FDT, <a href="https://t.co/UPIujQQIvm">https://t.co/UPIujQQIvm</a></p>&mdash; @limmerlab, October 23, 2019</blockquote>
+
+                     -->
+                    <br>
+                    <h4> <a href="https://twitter.com/limmerlab">Older Limmer group news here</a> </h4>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Container (Services Section) -->
+
+        <div id="members" class="container-members text-center bg-grey">
+            <h2>Group members</h2>
+            <hr>
+            <p class="lead4">We are a group of theorists, who represent and value all backgrounds and identities,
+            <br>including ethnicity, race, nationality, gender identity, sexuality, disability status, age, socioeconomic status, religion, and culture.</p>
+            <br>
+
+            <br>
+            <div class="row slideanim">
+                <div class="col-sm-3">
+                    <img class="img-rounded" src="grppic/limmer.jpg" height=250 align="center">
+                        <h5>David Limmer</h5>
+                        <p class="lead4"><b>Principle Investigator</b></p>
+                        <p class="lead5">Fellow at PCTS, 2013-2016 <br>
+                        Ph.D. UC Berkeley, 2013<br>
+                        B.S.  New Mexico Tech, 2008</p>
+                        <p class="lead5">
+                        <a href="mailto:dlimmer@berkeley.edu" align="middle"> dlimmer@berkeley.edu</a></p>
+                </div>
+                <div class="col-sm-3">
+                    <img class="img-rounded" src="grppic/Amr.jpg" height=250 align="center">
+                        <h5><a href="https://scholar.google.com/citations?user=2-oJGF4AAAAJ&hl=en">Amro Dodin</a></h5>
+                        <p class="lead4"><b>Postdoctoral Researcher</b></p>
+                        <p class="lead5">Ph.D. MIT, 2020 <br>
+                        M.S. University of Toronto, 2016<br>
+                        B.S. University of Toronto, 2016<br></p>
+                        <p class="lead5">
+                        <a href="mailto:ADodin@lbl.gov"> adodin@lbl.gov </a></p>
+                        </div>
+
+                <div class="col-sm-3">
+                    <img class="img-rounded" src="grppic/Tom.jpeg" height=250 align="center">
+                        <h5><a href="https://quantomchemist.wordpress.com">Thomas Fay</a></h5>
+                        <p class="lead4"><b>Postdoctoral Researcher</b></p>
+                        <p class="lead5">Ph.D. University of Oxford, 2020<br>
+                        M.S. University of Oxford, 2017</p>
+                        <p class="lead5">
+                        <a href="mailto:tom.patrick.fay@gmail.com"> tom.patrick.fay@gmail.com</a></p>
+                </div>
+
+                <div class="col-sm-3">
+                    <img class="img-rounded" src="grppic/phillip.jpg" height=250 align="center">
+                        <h5><a href="https://scholar.google.com/citations?user=3WQ3T5IAAAAJ&hl=en">Phillip Helms</a></h5>
+                        <p class="lead4"><b>Postdoctoral Researcher</b></p>
+                        <p class="lead5">Ph.D. Caltech, 2021<br>
+                        B.S. University of Utah, 2016</p>
+                        <p class="lead5">
+                        <a href="mailto:phelms@berkeley.edu"> phelms@berkeley.edu</a></p>
+                        </div>
+
+
+
+            </div>
+
+            <br>
+
+            <div class="row slideanim">
+                <div class="col-sm-3">
+                    <img class="img-rounded" src="grppic/Anthony.jpg" height=250 align="center">
+                        <h5><a href="https://scholar.google.fr/citations?user=XR4a4wkAAAAJ&hl=en">Anthony Poggioli</a></h5>
+                        <p class="lead4"><b>Postdoctoral Researcher</b></p>
+                        <p class="lead5">Ph.D. Ecole Normale Superieure, 2019<br>
+                        Ph.D. University of Washington, 2015<br>
+                        M.S. University of Washington, 2015</p>
+                        <p class="lead5">
+                        <a href="mailto:poggiolianthony@gmail.com "> poggiolianthony@gmail.com </a></p>
+                        </div>
+
+                <div class="col-sm-3">
+                    <img class="img-rounded" src="grppic/Kritanjan.jpg" height=250 align="center">
+                        <h5>Kritanjan Polley</h5>
+                        <p class="lead4"><b>Postdoctoral Research</b></p>
+                        <p class="lead5">Ph.D. Cornell University, 2022 <br>
+                        M.S. IIT Kanpur, 2017 <br>
+                        C.S. Calcutta University, 2015 <br></p>
+                        <p class="lead5">
+                        <a href="mailto:kpolley@berkeley.edu"> kpolley@berkeley.edu</a></p>
+                        </div>
+
+                <div class="col-sm-3">
+                    <img class="img-rounded" src="grppic/jorge.jpg" height=250 align="center">
+                        <h5><a href="https://ppfp.ucop.edu/info/fellowship-recipients/fellows-pages/rosa-raices-jorge.html">Jorge Rosa-Raıces</a></h5>
+                        <p class="lead4"><b>Postdoctoral Researcher</b></p>
+                        <p class="lead5">Ph.D. Caltech, 2022<br>
+                        B.S. University of Puerto Rico, 2016</p>
+                        <p class="lead5">
+                        <a href="mailto:jrosaraices@berkeley.edu"> jrosaraices@berkeley.edu</a></p>
+                        </div>
+
+
+
+            <div class="col-sm-3">
+                    <img class="img-rounded" src="grppic/michelle.jpg" height=250 align="center">
+                        <h5>Michelle Anderson</h5>
+                        <p class="lead4"><b>Graduate Student</b></p>
+                        <p class="lead5">B.S. University of Minnesota, 2019 <br></p>
+                        <p class="lead5">
+                        <a href="mailto:mca@berkeley.edu"> mca@berkeley.edu</a></p>
+                        </div>
+
+
+            </div>
+            <br>
+
+
+            <div class="row slideanim">
+                <div class="col-sm-3">
+                    <img class="img-rounded" src="grppic/Songela.jpg" height=250 align="center">
+                        <h5>Songela Chen</h5>
+                        <p class="lead4"><b>Graduate Student</b></p>
+                        <p class="lead5">B.S. MIT, 2019 <br></p>
+                        <p class="lead5">
+                        <a href="mailto:songela@berkeley.edu"> songela@berkeley.edu</a></p>
+                        </div>
+
+                <div class="col-sm-3">
+                    <img class="img-rounded" src="grppic/leonardo.jpg" height=250 align="center">
+                        <h5>Leonardo Coello Escalante</h5>
+                        <p class="lead4"><b>Graduate Student</b></p>
+                        <p class="lead5">B.S. National Autonomous U. of Mexico, 2020 <br></p>
+                        <p class="lead5">
+                        <a href="mailto:leonardo.coello@berkeley.edu">leonardo.coello@berkeley.edu</a></p>
+                        </div>
+
+                <div class="col-sm-3">
+                    <img class="img-rounded" src="grppic/Melanie.jpg" height=250 align="center">
+                        <h5>Melanie Huynh</h5>
+                        <p class="lead4"><b>Graduate Student</b></p>
+                        <p class="lead5">B.S. Oregon State University, 2021
+                        <p class="lead5">
+                        <a href="mailto:melanie.huynh@berkeley.edu"> melanie.huynh@berkeley.edu</a></p>
+                        </div>
+
+                <div class="col-sm-3">
+                    <img class="img-rounded" src="grppic/Jin.jpeg" height=250 align="center">
+                        <h5>Seokjin  Moon</h5>
+                        <p class="lead4"><b>Graduate Student</b></p>
+                        <p class="lead5">B.S. Seoul National University, 2017 <br></p>
+                        <p class="lead5">
+                        <a href="mailto:seokjin_moon@berkeley.edu"> seokjin_moon@berkeley.edu</a></p>
+                        </div>
+
+
+            </div>
+            <br>
+
+            <div class="row slideanim">
+                <br>
+                <div class="col-sm-3">
+                    <img class="img-rounded" src="grppic/Sam-OL.jpeg" height=250 align="center">
+                        <h5>Sam Oaks-Leaf</h5>
+                        <p class="lead4"><b>Graduate Student</b></p>
+                        <p class="lead5">B.S. Brown University, 2021 <br></p>
+                        <p class="lead5">
+                        <a href="mailto:sam_oaks@berkeley.edu"> sam_oaks@berkeley.edu</a></p>
+                        </div>
+
+                <div class="col-sm-3">
+                    <img class="img-rounded" src="grppic/yoon.jpg" height=250 align="center">
+                        <h5>Yoonjae Park</h5>
+                        <p class="lead4"><b>Graduate Student</b></p>
+                        <p class="lead5">M.S. Sogang University, 2018 <br>
+                        B.S. Sogang University, 2016 <br></p>
+                        <p class="lead5">
+                        <a href="mailto:yoonjae_park@berkeley.edu"> yoonjae_park@berkeley.edu</a></p>
+                        </div>
+
+                <div class="col-sm-3">
+                    <img class="img-rounded" src="grppic/Rohit.jpg" height=250 align="center">
+                        <h5>Rohit Rana</h5>
+                        <p class="lead4"><b>Graduate Student</b></p>
+                        <p class="lead5">B.S. University of Florida, 2022
+                        <p class="lead5">
+                        <a href="mailto:rohit_rana@berkeley.edu"> rohit_rana@berkeley.edu</a></p>
+                        </div>
+
+
+                <div class="col-sm-3">
+                    <img class="img-rounded" src="grppic/Aditya.jpeg" height=250 align="center">
+                        <h5>Aditya Singh</h5>
+                        <p class="lead4"><b>Graduate Student</b></p>
+                        <p class="lead5">B.S. University of <br>Wisconsin-Madison, 2020 <br></p>
+                        <p class="lead5">
+                        <a href="mailto:ansingh@berkeley.edu"> ansingh@berkeley.edu</a></p>
+                        </div>
+
+
+            </div>
+
+        <br>
+
+
+        <div class="row slideanim">
+
+               <div class="col-sm-3">
+                   <img class="img-rounded" src="grppic/Joseph.jpg" height=250 align="center">
+                       <h5>Joseph Slivka</h5>
+                       <p class="lead4"><b>Graduate Student</b></p>
+                       <p class="lead5">B. S. Michigan State University, 2020<br>
+                       <p class="lead5">
+                       <a href="mailto:jslivka@berkeley.edu " align="middle"> jslivka@berkeley.edu </a></p>
+                       </div>
+
+
+
+
+
+
+            </div>
+<!--
+            <div class="row slideanim">
+
+                <div class="col-sm-3">
+                    <img class="img-rounded" src="grppic/Kritanjan.jpg" height=250 align="center">
+                        <h5>Kritanjan Polley</h5>
+                        <p class="lead4"><b>Postdoctoral Research</b></p>
+                        <p class="lead5">Ph.D. Cornell University <br></p>
+                        <p class="lead5">B.S. University of <br>Wisconsin-Madison, 2020 <br></p>
+                        <p class="lead5">
+                        <a href="mailto:ansingh@berkeley.edu"> ansingh@berkeley.edu</a></p>
+                        </div>
+
+
+                <div class="col-sm-3">
+                    <img class="img-rounded" src="grppic/Songela.jpg" height=250 align="center">
+                        <h5>Amr Dodin</h5>
+                        <p class="lead4"><b>Graduate Student</b></p>
+                        <p class="lead5">B.S. MIT, 2019 <br></p>
+                        <p class="lead5">
+                        <a href="mailto:sam_oaks@berkeley.edu"> sam_oaks@berkeley.edu</a></p>
+                        </div>
+
+            </div>
+ -->
+            <br>
+
+            <br>
+
+
+            <div class="col-sm-3">
+            </div>
+
+
+
+
+            <br>
+            <div class="row slideanim">
+                <a href="#former" class="btn btn-accent mytoggle" data-toggle="collapse"><h2>Click for Alumni</h2></a>
+                <hr>
+                <div id="former" class="collapse">
+
+                    <div class="col-sm-3">
+                        <h5>Amael Obliger</h5>
+                        <p class="lead4"><b>Postdoctoral Researcher <br>2017-2019</b></p>
+                        <p class="lead5">Assistant Professor <br>
+                        Université de Bordeaux<br>
+                        <p class="lead5">
+                        <a href="mailto:amael.obliger@univ-pau.fr"> amael.obliger@univ-pau.fr</a></p>
+
+                    </div>
+
+                    <div class="col-sm-3">
+                        <h5>Amikam Levy</h5>
+                        <p class="lead4"><b>Postdoctoral Researcher <br>2018-2020</b></p>
+                        <p class="lead5">Assistant Professor <br>
+                        Bar Ilan University<br>
+                        <p class="lead5">
+                        <a href="mailto:amikamlevy@gmail.com"> amikamlevy@gmail.com</a></p>
+
+                    </div>
+
+                    <div class="col-sm-3">
+                        <h5>Mirza Galib</h5>
+                        <p class="lead4"><b>Postdoctoral Researcher <br>2018-2021</b></p>
+                        <p class="lead5">Assistant Professor <br>
+                        Howard University<br>
+                        <p class="lead5">
+                        <a href="mailto:miz.galib@gmail.com "> miz.galib@gmail.com </a></p>
+
+                    </div>
+
+
+                    <div class="col-sm-3">
+                        <h5>Samuel Niblett</h5>
+                        <p class="lead4"><b>Postdoctoral Researcher <br>2018-2021</b></p>
+                        <p class="lead5">Postdoctoral Researcher <br>
+                        Cambridge University<br>
+                        <p class="lead5">
+                        <a href="mailto:sniblett402@gmail.com"> sniblett402@gmail.com </a></p>
+
+                    </div>
+
+                    <br>
+                    <br>
+                    <div class="col-sm-3">
+                        <h5>Chloe Gao</h5>
+                        <p class="lead4"><b>Graduate Student <br>2016-2021</b></p>
+                        <p class="lead5">Consultant <br>
+                        BCG Consultants<br>
+                        <p class="lead5">
+                        <a href="mailto:chloegao12@gmail.com"> chloegao12@gmail.com </a></p>
+
+                    </div>
+
+
+                    <div class="col-sm-3">
+                        <h5>Trevor Grand Pre</h5>
+                        <p class="lead4"><b>Graduate Student <br>2016-2021</b></p>
+                        <p class="lead5">Postdoctoral Researcher <br>
+                        Princeton University<br>
+                        <p class="lead5">
+                        <a href="mailto:tgrandpr@princeton.edu"> tgrandpr@princeton.edu </a></p>
+
+                    </div>
+
+                    <div class="col-sm-3">
+                        <h5>Addison Schile</h5>
+                        <p class="lead4"><b>Graduate Student <br>2016-2021</b></p>
+                        <p class="lead5">Developer <br>
+                        Schrodinger<br>
+                        <p class="lead5">
+                        <a href="mailto:addschile@gmail.com"> addschile@gmail.com </a></p>
+
+                    </div>
+
+                    <div class="col-sm-3">
+                        <h5>Avishek Das</h5>
+                        <p class="lead4"><b>Graduate Student <br>2017-2022</b></p>
+                        <p class="lead5">Postdoctoral Researcher <br>
+                        AMOLF<br>
+                        <p class="lead5">
+                        <a href="mailto:avishek_das@berkeley.edu"> avishek_das@berkeley.edu </a></p>
+
+                    </div>
+
+
+
+
+                    <br>
+                    <br>
+                    <div class="col-sm-3">
+                        <h5>Laura Scalfi</h5>
+                        <p class="lead4"><b>Visiting Masters Student <br>2017-2018</b></p>
+                        <p class="lead5">Ph.D. Student <br>
+                        ENS Paris<br>
+                        <p class="lead5">
+                        <a href="mailto:laura.scalfi@ens.fr"> laura.scalfi@ens.fr </a></p>
+
+                    </div>
+
+
+
+                    <div class="col-sm-3">
+                        <h5>Nirvaan Khera</h5>
+                        <p class="lead4"><b>Undergraduate Student <br>2019-2020</b></p>
+                        <p class="lead5">Ph.D. Student <br>
+                        University of Illinois, Urbana-Champaign<br>
+                        <p class="lead5">
+                        <a href="mailto:nirvaank@berkeley.edu"> nirvaank@berkeley.edu </a></p>
+
+                    </div>
+
+                    <div class="col-sm-3">
+                        <h5>Frank Gao</h5>
+                        <p class="lead4"><b>Undergraduate Student <br>2018-2019</b></p>
+                        <p class="lead5">Ph.D. Student<br>
+                        University of Chicago<br>
+                        <p class="lead5">
+                        <a href="mailto:frankgao13@berkeley.edu"> frankgao13@berkeley.edu</a></p>
+
+                    </div>
+                    <div class="col-sm-3">
+                        <h5>Artur Lyssenko</h5>
+                        <p class="lead4"><b>Undergraduate Student <br>2020-2022</b></p>
+                        <p class="lead5">Ph.D. Student<br>
+                        Harvard University<br>
+                        <p class="lead5">
+                        <a href="mailto:alyssenko@berkeley.edu"> alyssenko@berkeley.edu</a></p>
+
+                    </div>
+
+
+                </div>
+
+                <br>
+
+            </div>
+
+
+
+
+
+            <div id="research" class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Research</h2>
+
+                        <p class="lead3">Our research endeavors to advance theoretical descriptions of complex, condensed phase materials especially in instances where equilibrium ideas do not apply. We do this using concepts and methods developed by considering contemporary statistical mechanics unified when appropriate with principles from disparate disciplines in theoretical science. We ultimately aim to derive effective theories and coarse-grained descriptions and do so with the help of modern numerical techniques and computer simulation. Inspiration for specific problems comes from close collaboration with experimentalists studying real physical systems in microscopic or mesoscopic detail. Specific areas of current interest include the emergent behavior of systems undergoing simple chemical dynamics in complex environments, the response of nanoscale systems driven far from equilibrium and the solid-electrolyte interfaces relevant to basic energy science.</p>
+
+                    </div>
+
+                </div>
+
+                <br>
+                <div class="row text-center row slideanim">
+                    <div class="col-sm-4">
+                        <div> <img class="img2" src="neq1.jpg"></div>
+                        <h3>Chemical dynamics</h3>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <img class="img2" src="neq.jpg">
+                            <h3>Nanoscale transport</h3>
+                            </div>
+
+                    <div class="col-sm-4">
+                        <img class="img2" src="neq3.jpg" >
+                            <h3>Driven assembly</h3>
+                            </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="about" class="container-media bg-grey">
+            <div class="row slideanim">
+                <div class="col-sm-8">
+                    <h2>About David</h2>
+            David Limmer is an Associate Professor in the <a href="https://chemistry.berkeley.edu/">Department of Chemistry at University of California Berkeley</a>, a Research Scientist in the Materials and Chemical Sciences Divisions of <a href="https://www.lbl.gov/">Lawrence Berkeley National Laboratory</a>, and a Fellow of the <a href="https://kavli.berkeley.edu/">Kavli Energy NanoSciences Institute</a>. From 2016-2018 he held the Chevron Chair in Chemistry at UC Berkeley. He received his B.S. in chemical engineering in 2008 from the <a href="https://www.nmt.edu">New Mexico Institute of Mining and Technology</a>, and his Ph.D. in chemistry from the University of California, Berkeley under the supervision of <a href="http://gold.cchem.berkeley.edu/">David Chandler</a>. From 2013-2016, David was an independent fellow of the <a href="http://pcts.princeton.edu/about/mission">Princeton Center for Theoretical Science</a>. Throughout his independent career, David has been recognized as a Heising-Simons Fellow of the Kavli Foundation, a Scialog Fellow of the Research Corporation for Science and Gordon and Betty Moore Foundation, and a Hellman Fellow. In 2019, he was the recipient of the <a href="https://chemistry.berkeley.edu/news/david-limmer-awarded-department-energy-early-career-research-program-funding">Department of Energy Early Career Award</a>. In 2021, he was awarded an <a href="https://chemistry.berkeley.edu/news/david-limmer-awarded-2021-alfred-p-sloan-fellowship">Alfred P. Sloan Fellowship</a>. In 2022, David was recognized with the <a href="https://chemistry.berkeley.edu/news/david-limmer-awarded-2022-donald-s-noyce-undergraduate-teaching-prize">Donald S. Noyce Prize</a> for excellence in undergraduate teaching. <a href="cv-limmer.pdf">[CV]</a>
+                    <br>
+                    <br>
+                    <a href="https://arxiv.org/search/?searchtype=author&query=Limmer%2C+D+T"><img class="img-rounded" src="arxiv.jpg" height=50 align="left"></a>
+                    &nbsp; &nbsp;
+
+                    <a href="https://scholar.google.com/citations?user=Vr3vbQMAAAAJ&hl=en"> <img class="img-rounded" src="google.png" height=50></a>
+                    &nbsp; &nbsp;
+                    <a href="https://twitter.com/limmerlab"><img class="img-rounded" src="twitter.png" height=50></a>
+
+                    &nbsp; &nbsp;
+                    <a href="https://chemistry.berkeley.edu/faculty/chem/limmer"><img class="img-rounded" src="coc_berkeley.png" height=50></a>
+
+                    <br>
+                </div>
+                <div class="col-sm-4" align="right">
+                    <br>
+                    <img class="img2" src="DavidL.jpg">
+                        <br>
+                        <br>
+
+                        </div>
+            </div>
+
+
+
+
+
+            <hr>
+            <footer class="container-fluid text-center">
+                <a href="#myPage" title="To Top">
+                    <span class="glyphicon glyphicon-chevron-up"></span>
+                </a>
+                <p>Copyright David Limmer 2017</p>
+            </footer>
+
+            <script>
+                $(document).ready(function(){
+                                  // Add smooth scrolling to all links in navbar + footer link
+                                  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+                                                                              // Make sure this.hash has a value before overriding default behavior
+                                                                              if (this.hash !== "") {
+                                                                              // Prevent default anchor click behavior
+                                                                              event.preventDefault();
+
+                                                                              // Store hash
+                                                                              var hash = this.hash;
+
+                                                                              // Using jQuery's animate() method to add smooth page scroll
+                                                                              // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                                                                              $('html, body').animate({
+                                                                                                      scrollTop: $(hash).offset().top
+                                                                                                      }, 900, function(){
+
+                                                                                                      // Add hash (#) to URL when done scrolling (default click behavior)
+                                                                                                      window.location.hash = hash;
+                                                                                                      });
+                                                                              } // End if
+                                                                              });
+
+                                  $(window).scroll(function() {
+                                                   $(".slideanim").each(function(){
+                                                                        var pos = $(this).offset().top;
+
+                                                                        var winTop = $(window).scrollTop();
+                                                                        if (pos < winTop + 600) {
+                                                                        $(this).addClass("slide");
+                                                                        }
+                                                                        });
+                                                   });
+                                  })
+                </script>
+
+
+            </body>
+</html>
+
+
+
